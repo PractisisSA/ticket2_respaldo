@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/index.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-lg-3">
+				<img src="../img/ticketfacilnegro.png" style="width:100%; max-width:250px;" />
+			</div>
+			<div class="col-lg-9" style="text-align:right; vertical-align:middle; padding:20px 0px;">
+				<button class="btn btn-success" type="button" onclick="bajardatos()" id="btnbajar">
+					<span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span>
+					Download
+				</button>
+				<span id="waitbajar" style="display:none;">Actualizando...<img src="../img/loading.gif" style="max-width:25px;" /></span>
+				<button class="btn btn-primary" type="button" onclick="subirdatos()" id="btnsubir">
+					<span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>
+					Upload
+				</button>
+				<span id="waitsubir" style="display:none;">Actualizando...<img src="../img/loading.gif" style="max-width:25px;" /></span>
+				<button class="btn btn-danger" type="button" onclick="logout()">
+					<span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+					Log Out
+				</button>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="row" style="margin:15px;">
+				<div class="col">
+					<div class="col-lg-12">
+						<button type="button" class="btn btn-primary form-control" onclick="selectmenu('1')">Sólo Código</button>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin:15px;">
+				<div class="col">
+					<div class="col-lg-12">
+						<button type="button" class="btn btn-primary form-control" onclick="selectmenu('2')">Código y Cédula</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="solocodigo" style="display:none;">
+			<div class="row" style="margin-top:10%;">
+				<div class="col-lg-4 col-lg-push-4">
+					<h4>Código:</h4>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">
+							<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+						</span>
+						<input type="text" class="form-control" aria-describedby="basic-addon1" id="onlycodigo" onkeypress="validarBoletocodigo(event)">
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-top:2%;">
+				<div class="col-lg-12" style="text-align:center;">
+					<button type="button" class="btn btn-primary" onclick="validarIngresocodigo()" id="btnvalidarcodigo">VALIDAR</button><br>
+					<img src="../img/loading.gif" style="max-width:25px; display:none;" id="waitvalidarcodigo" />
+				</div>
+			</div>
+		</div>
+		<div class="cedulacodigo" style="display:none;">
+			<div class="row" style="margin-top:10%;">
+				<div class="col-lg-4 col-lg-push-4">
+					<h4>Código:</h4>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">
+							<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+						</span>
+						<input type="text" class="form-control" aria-describedby="basic-addon1" id="codigo" onkeypress="saltar(event)">
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-top:2%;">
+				<div class="col-lg-4 col-lg-push-4">
+					<h4>Cédula:</h4>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon1">
+							<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+						</span>
+						<input type="text" class="form-control" aria-describedby="basic-addon1" id="cedula" onkeypress="validarBoleto(event)">
+						<span class="input-group-addon" style="cursor:pointer;" onclick="cedulaManual()">
+							Manual
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-top:2%;">
+				<div class="col-lg-12" style="text-align:center;">
+					<button type="button" class="btn btn-primary" onclick="validarIngreso()" id="btnvalidar">VALIDAR</button><br>
+					<img src="../img/loading.gif" style="max-width:25px; display:none;" id="waitvalidar" />
+				</div>
+			</div>
+		</div>
+		<div id="boletos" style="display:block;"></div>
+		<div class="modal fade" id="sms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header smsback" style="border-bottom:none;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="titlemodal" style="text-align:center;"></h4>
+					</div>
+					<div class="modal-body smsback" style="text-align:center;">
+						<br>
+						<h2 id="mensaje"></h2>
+						<br>
+						<h3 id="nombre"></h3>
+					</div>
+					<div class="modal-footer smsback" style="border-top:none;">
+						<!--<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="error1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header" style="background-color:#C51D34; color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Alerta!</h4>
+					</div>
+					<div class="modal-body">
+						<div class="alert alert-warning" role="alert">
+							<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&nbsp;
+							<strong>Alerta! </strong>Los campos están vacios.
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="error2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header" style="background-color:#C51D34; color:#fff;">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Alerta!</h4>
+					</div>
+					<div class="modal-body">
+						<div class="alert alert-danger" role="alert">
+							<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>&nbsp;
+							<strong>Alerta! </strong>El código ingresado es incorrecto.
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Aceptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+$(document).ready(function(){
+	$('#codigo').focus();
+});
+
+function selectmenu(data){
+	if(data == 1){
+		$('.menu').fadeOut('slow');
+		$('.solocodigo').delay(600).fadeIn('slow');
+	}else{
+		$('.menu').fadeOut('slow');
+		$('.cedulacodigo').delay(600).fadeIn('slow');
+	}
+}
+
+function saltar(e){
+	if(e.which == 13){
+		$('#cedula').focus();
+	}
+}
+
+function logout(){
+	window.location = '../index.html'; 
+}
+</script>

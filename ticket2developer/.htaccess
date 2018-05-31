@@ -1,0 +1,9 @@
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^XXX\.XXX\.XXX\.XXX
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^(?modulo=terminos)$ http://ticketfacil.ec/terminosycondiciones/index.php
+RewriteRule ^(principal)$ demo.php

@@ -1,0 +1,233 @@
+#imgcon {
+	width: 100%;
+}
+.descon{
+	width: 100%;
+	max-width : 1000px;
+}
+
+.descon td{
+	border : none;
+}
+.local td{
+	border : none;
+}
+.descon tr.titulo{
+	border : inset;
+}
+.local tr.tit{
+	border : inset;
+}
+.boton {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 2px;
+	outline: none;          /* remove dotted border in FF */
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Roboto, sans-serif;
+	padding: .5em 1.75em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	}
+.boton:hover {
+	text-decoration: none;
+	}
+.boton:active {
+	position: relative;
+	top: 1px;
+	}
+.boton.black {
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(top,  #666,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+.boton.black:hover {
+	background: #000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+	background: -moz-linear-gradient(top,  #444,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+.boton.black:active {
+	color: #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#666666));
+	background: -moz-linear-gradient(top,  #000,  #666666);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+}
+.video{
+	max-width: 300px;
+	height: 250px;
+}
+#redes{
+	width: 100%;
+}
+
+.imgredes{
+	max-width: 45px;
+	border: 2px solid white;
+}
+.ancho_td{
+	width: 500px;
+}
+.seleccion{
+	width: 100%;
+	max-width: 1000px;
+	border: 2px solid #c0c0c0;
+}
+.seleccion td{
+	border: none;
+}
+.added{
+	border: none;
+	background: url(http://subtlepatterns.com/patterns/debut_light.png);
+	text-align: center;
+}
+.local{
+	width: 100%;
+	max-width: 1000px;
+	border: 2px solid #c0c0c0;
+}
+.tabla_general_local{
+	width: 100%;
+	max-width: 1000px;
+	border: 2px solid #c0c0c0;
+}
+#img_concierto{
+	max-width: 200px;
+	border: 2px solid navy;
+}
+#boton_compra{
+	width: 100%;
+	max-width: 1000px;
+}
+#topbox : hover{
+	background: red;
+}
+#mostrar_mapa{
+	position:relative;
+}
+.divlocalidad{
+	position:absolute;
+	top:50%;
+	right:50%;
+	width:200px;
+	height:25px;
+	border:1px solid #808080;
+	background-color: blue;
+	margin-left: -100px;
+	margin-top: -100px;
+	padding:5px;
+}
+#mostrar_mapa{
+	width:1000px; 
+	min-height:350px;  
+	left:50%; 
+	top:50%; 
+	margin-left:-510px; 
+	margin-top: -350px; 
+	z-index:1; 
+	border:10px solid #fff; 
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-o-border-radius:5px; 
+	-webkit-border-radius:5px;
+	display:none;
+	background: url(http://subtlepatterns.com/patterns/grey_wash_wall.png);
+}
+#ocultar{
+	width:100%; 
+	min-height:100%; 
+	position:relative; 
+	left:0px; 
+	top:0px; 
+	z-index:0;
+}
+#close{ 
+	width:50px; 
+	height:50px; 
+	position:absolute; 
+	top:-18px; 
+	right:-22px; 
+	color:#FFF; 
+	z-index:2;
+}
+
+#mostrar_login{
+	width:1000px; 
+	min-height:350px;  
+	left:50%; 
+	top:50%; 
+	margin-left:-510px; 
+	margin-top: -350px; 
+	z-index:2; 
+	border:10px solid #000; 
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-o-border-radius:5px; 
+	-webkit-border-radius:5px;
+	display:none;
+	background: url(http://subtlepatterns.com/patterns/debut_light.png);
+}
+
+#mostrar_login{
+	position:relative;
+}
+
+#ocultar_mapa{
+	width:100%; 
+	min-height:100%; 
+	position:relative; 
+	left:0px; 
+	top:0px; 
+	z-index:1;
+}
+
+.hastamientras{
+	width: 10px; 
+	heigth: 10px; 
+	background: #FF0000;
+}
+.table_info{
+	width: 100%;
+	max-width: 660px;
+}
+
+#choose_seats{
+	background-color: #000;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#chars_concert{
+	background-color: #000;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#data_concert{
+	background-color: #000;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#table_info_concert{
+	margin-left: 30px;
+	background-color: #00AEEF;
+}
+
+#background_claro{
+	background-image: url(http://subtlepatterns.com/patterns/debut_light.png);
+	width: 100%;
+	position: relative;
+}

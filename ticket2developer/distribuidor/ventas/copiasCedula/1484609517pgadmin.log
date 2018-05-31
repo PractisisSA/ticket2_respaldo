@@ -1,0 +1,334 @@
+2016-08-18 17:43:26 ERROR  : ERROR:  syntax error at end of input
+LINE 10: COMMENT ON SEQUENCE partner_id
+                                       ^
+2016-08-18 17:44:06 ERROR  : ERROR:  sequence "partner_id" does not exist
+2016-08-18 17:45:16 ERROR  : ERROR:  relation "partner_id" does not exist
+LINE 2:   FROM partner_id
+               ^
+2016-08-18 17:45:18 ERROR  : Column not found in pgSet: last_value
+2016-08-18 17:45:20 ERROR  : Column not found in pgSet: min_value
+2016-08-18 17:45:20 ERROR  : Column not found in pgSet: max_value
+2016-08-18 17:45:22 ERROR  : Column not found in pgSet: cache_value
+2016-08-18 17:45:22 ERROR  : Column not found in pgSet: increment_by
+2016-08-18 17:45:23 ERROR  : Column not found in pgSet: is_cycled
+2016-08-18 17:45:23 ERROR  : Column not found in pgSet: is_called
+2016-08-18 17:51:21 ERROR  : ERROR:  syntax error at or near "nextval"
+LINE 3:   id integer NOT NULL nextval('partnerDetalle_seq'),
+                              ^
+2016-08-18 17:51:48 ERROR  : ERROR:  syntax error at or near "nextval"
+LINE 5:   id integer nextval('partnerDetalle_seq'),
+                     ^
+2016-08-18 17:58:05 ERROR  : ERROR:  relation "partnerdetalle_seq" does not exist
+2016-08-18 18:05:59 ERROR  : ERROR:  relation "partnerdetalle" does not exist
+LINE 1: insert into partnerDetalle values("null","1","1","1","1","1"...
+                    ^
+2016-08-18 18:06:11 ERROR  : ERROR:  relation "partnerdetalle" does not exist
+LINE 1: insert into partnerDetalle values("1","1","1","1","1","1","1...
+                    ^
+2016-08-18 18:07:09 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-18 18:07:12 ERROR  : Column not found in pgSet: last_value
+2016-08-18 18:07:13 ERROR  : Column not found in pgSet: min_value
+2016-08-18 18:07:14 ERROR  : Column not found in pgSet: max_value
+2016-08-18 18:07:14 ERROR  : Column not found in pgSet: cache_value
+2016-08-18 18:07:14 ERROR  : Column not found in pgSet: increment_by
+2016-08-18 18:07:15 ERROR  : Column not found in pgSet: is_cycled
+2016-08-18 18:07:15 ERROR  : Column not found in pgSet: is_called
+2016-08-18 18:11:58 ERROR  : ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, fabricio, las casas, practipos, quito, 987654321, 987654321, 1716620818, fabricio@practisis.com, 123456, t).
+2016-08-18 18:12:08 ERROR  : ERROR:  null value in column "id" violates not-null constraint
+DETAIL:  Failing row contains (null, fabricio, las casas, practipos, quito, 987654321, 987654321, 1716620818, fabricio@practisis.com, 123456, t).
+2016-08-18 18:12:37 ERROR  : ERROR:  column "id" is in a primary key
+2016-08-18 18:12:42 ERROR  : ERROR:  column "id" is in a primary key
+2016-08-18 18:17:44 ERROR  : ERROR:  relation "company" does not exist
+LINE 1: INSERT INTO COMPANY (nombre,direccion,negocio,ciudad,tel,cel...
+                    ^
+2016-08-19 12:00:20 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-19 17:30:46 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-22 14:36:07 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-22 16:20:37 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-24 14:58:03 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-08-24 15:36:23 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-09-09 12:09:13 ERROR  : ERROR:  syntax error at or near ")"
+LINE 5: ORDER BY (texto = ?) DESC, category
+                           ^
+2016-09-09 12:09:39 ERROR  : ERROR:  column "configbasica" does not exist
+LINE 2: WHERE nombre != configbasica 
+                        ^
+2016-09-14 17:22:15 ERROR  : ERROR:  null value in column "direccion" violates not-null constraint
+DETAIL:  Failing row contains (18, Jose D Villareal, null, null, null, null, null, null, null, null, null, null).
+2016-09-14 17:22:26 ERROR  : ERROR:  null value in column "direccion" violates not-null constraint
+DETAIL:  Failing row contains (19, Jose, null, null, null, null, null, null, null, null, null, null).
+2016-09-14 17:22:32 ERROR  : ERROR:  null value in column "direccion" violates not-null constraint
+DETAIL:  Failing row contains (18, Jose, null, null, null, null, null, null, null, null, null, null).
+2016-09-14 17:22:53 ERROR  : ERROR:  null value in column "negocio" violates not-null constraint
+DETAIL:  Failing row contains (18, Jose, el bosque, null, null, null, null, null, null, null, null, null).
+2016-09-14 18:04:39 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-09-14 18:55:13 ERROR  : ERROR:  array value must start with "{" or dimension information
+LINE 1: UPDATE public.partner_clientes SET estado='0'::numeric[] WHE...
+                                                  ^
+2016-09-14 18:55:15 ERROR  : ERROR:  array value must start with "{" or dimension information
+LINE 1: UPDATE public.partner_clientes SET estado='0'::numeric[] WHE...
+                                                  ^
+2016-09-14 18:55:57 ERROR  : ERROR:  array value must start with "{" or dimension information
+LINE 1: UPDATE public.partner_clientes SET estado='0'::numeric[] WHE...
+                                                  ^
+2016-09-27 16:34:27 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-09-27 18:44:47 ERROR  : ERROR:  relation "id_chats" already exists
+2016-09-28 13:22:35 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-10-25 16:51:36 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-10-25 17:32:17 ERROR  : ERROR:  LIMIT #,# syntax is not supported
+LINE 1: ...cts where idclient = '1' ORDER BY contactname ASC LIMIT 0, 1...
+                                                             ^
+HINT:  Use separate LIMIT and OFFSET clauses.
+2016-10-25 17:32:28 ERROR  : ERROR:  LIMIT #,# syntax is not supported
+LINE 1: ...cts where idclient = '1' ORDER BY contactname ASC LIMIT '0',...
+                                                             ^
+HINT:  Use separate LIMIT and OFFSET clauses.
+2016-10-25 17:33:15 ERROR  : ERROR:  LIMIT #,# syntax is not supported
+LINE 1: ...cts where idclient = '1' ORDER BY contactname ASC LIMIT '10'...
+                                                             ^
+HINT:  Use separate LIMIT and OFFSET clauses.
+2016-10-26 16:58:49 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-10-26 16:59:58 ERROR  : ERROR:  column "fh" does not exist
+LINE 1: ...  SELECT EXTRACT(YEAR FROM hora) AS anho, TO_CHAR(fh,'MMDD')...
+                                                             ^
+2016-10-26 17:06:59 ERROR  : ERROR:  column "chats.hora" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT count(id) as total , hora::date FROM chats where idcl...
+                                    ^
+2016-10-26 17:07:22 ERROR  : ERROR:  syntax error at or near "group"
+LINE 1: ...e FROM chats where idclient = '1' ORDER BY id ASC group by h...
+                                                             ^
+2016-10-26 17:07:34 ERROR  : ERROR:  column "chats.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: ...OM chats where idclient = '1'  group by hora ORDER BY id ASC
+                                                                 ^
+2016-10-26 17:10:32 ERROR  : ERROR:  column "chats.hora" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT count(id) as total , hora::date FROM chats where idcl...
+                                    ^
+2016-10-26 17:11:27 ERROR  : ERROR:  syntax error at or near "group"
+LINE 1: ...ROM chats where idclient = '1' order by hora  ASC group by h...
+                                                             ^
+2016-10-26 17:12:56 ERROR  : ERROR:  aggregate functions are not allowed in GROUP BY
+LINE 1: SELECT sum(id) as total , hora::date FROM chats where idclie...
+               ^
+2016-10-26 17:13:12 ERROR  : ERROR:  aggregate functions are not allowed in GROUP BY
+LINE 1: SELECT count(id) as total , hora::date FROM chats where idcl...
+               ^
+2016-10-26 17:14:56 ERROR  : ERROR:  syntax error at or near "where"
+LINE 1: ...ELECT  hora::date FROM chats where idclient = '1' where hora...
+                                                             ^
+2016-10-26 17:16:10 ERROR  : ERROR:  column "chats.hora" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: ...2016-10-31 00:00:00' group by hora::date order by hora  ASC 
+                                                             ^
+2016-10-26 17:16:23 ERROR  : ERROR:  column "fehca" does not exist
+LINE 1: ...2016-10-31 00:00:00' group by hora::date order by fehca  ASC...
+                                                             ^
+2016-11-17 17:14:58 ERROR  : ERROR:  column "idempresa" does not exist
+2016-12-09 16:23:54 ERROR  : ERROR:  syntax error at or near "DES"
+LINE 1: ...::timestamp without time zone)) ) order by id_habitacion DES
+                                                                    ^
+2016-12-12 15:35:11 ERROR  : ERROR:  column "2" does not exist
+LINE 1: update compras set id_sustento_tributario = "2" ,
+                                                    ^
+2016-12-15 16:26:02 ERROR  : ERROR:  operator does not exist: text = integer
+2016-12-16 15:04:53 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-12-16 15:50:44 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-12-16 15:55:30 ERROR  : ERROR:  syntax error at or near "fun_roles_por_mes_empleado"
+LINE 1: fun_roles_por_mes_empleado('2016-07-26 00:00:00' , '2016-07-...
+        ^
+2016-12-16 15:56:09 ERROR  : ERROR:  a column definition list is required for functions returning "record"
+LINE 1: select * from fun_roles_por_mes_empleado('2016-07-26 00:00:0...
+                      ^
+2016-12-16 15:58:38 ERROR  : ERROR:  invalid input syntax for integer: "3%"
+LINE 2: ...0' and hasta <= '2016-07-26 23:59:59' and id_empleado = '3%'
+                                                                   ^
+QUERY:  
+	select * from salarios where desde >= '2016-07-26 00:00:00' and hasta <= '2016-07-26 23:59:59' and id_empleado = '3%'
+	
+CONTEXT:  PL/pgSQL function fun_roles_por_mes_empleado(timestamp without time zone,timestamp without time zone,integer) line 12 at FOR over EXECUTE statement
+2016-12-16 15:58:50 ERROR  : ERROR:  invalid input syntax for integer: "3%"
+LINE 2: ...0' and hasta <= '2016-07-26 23:59:59' and id_empleado = '3%'
+                                                                   ^
+QUERY:  
+	select * from salarios where desde >= '2016-07-26 00:00:00' and hasta <= '2016-07-26 23:59:59' and id_empleado = '3%'
+	
+CONTEXT:  PL/pgSQL function fun_roles_por_mes_empleado(timestamp without time zone,timestamp without time zone,integer) line 12 at FOR over EXECUTE statement
+2016-12-16 16:00:58 ERROR  : ERROR:  wrong record type supplied in RETURN NEXT
+DETAIL:  Returned type bigint does not match expected type text in column 1.
+CONTEXT:  PL/pgSQL function fun_roles_por_mes_empleado(timestamp without time zone,timestamp without time zone,integer) line 13 at RETURN NEXT
+2016-12-16 16:02:24 ERROR  : ERROR:  wrong record type supplied in RETURN NEXT
+DETAIL:  Returned type bigint does not match expected type text in column 1.
+CONTEXT:  PL/pgSQL function fun_roles_por_mes_empleado(timestamp without time zone,timestamp without time zone,integer) line 13 at RETURN NEXT
+2016-12-16 16:13:58 ERROR  : ERROR:  column "2016-07-26 00:00:00" does not exist
+LINE 1: select * from fun_roles_por_mes_empleado("2016-07-26 00:00:0...
+                                                 ^
+2016-12-16 16:14:10 ERROR  : ERROR:  column "2016-07-26 23:59:59" does not exist
+LINE 1: ...un_roles_por_mes_empleado('2016-07-26 00:00:00' , "2016-07-2...
+                                                             ^
+2016-12-16 16:14:21 ERROR  : ERROR:  column "239" does not exist
+LINE 1: ...o('2016-07-26 00:00:00' , '2016-07-26 23:59:59' , "239") as ...
+                                                             ^
+2016-12-20 16:05:44 ERROR  : ERROR:  column r.id_empleado does not exist
+LINE 3: where r.id_empleado = 239
+              ^
+2016-12-20 16:05:53 ERROR  : ERROR:  column "2016-07-01 00:00:00" does not exist
+LINE 4: and s.fecha = "2016-07-01 00:00:00"
+                      ^
+2016-12-20 16:12:13 ERROR  : ERROR:  relation "detalle_salario" does not exist
+LINE 2: from salarios as s , detalle_salario as d
+                             ^
+2016-12-21 14:18:36 ERROR  : ERROR:  missing FROM-clause entry for table "e"
+LINE 6:    AND e.empresa !=' ' 
+               ^
+2016-12-21 17:56:20 ERROR  : ERROR:  column "s.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select s.id , s.fecha, r.rubro , ds.valor
+               ^
+2016-12-21 17:56:27 ERROR  : ERROR:  column "r.rubro" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select s.fecha, r.rubro , ds.valor
+                        ^
+2016-12-21 18:15:14 ERROR  : ERROR:  "v_query2" is not a known variable
+LINE 14:    v_query2='select s.fecha, r.rubro , ds.valor
+            ^
+2016-12-21 18:19:26 ERROR  : ERROR:  wrong record type supplied in RETURN NEXT
+DETAIL:  Returned type timestamp without time zone does not match expected type text in column 1.
+CONTEXT:  PL/pgSQL function fun_roles_por_mes_empleado(date,date,bigint) line 26 at RETURN NEXT
+2016-12-21 18:25:55 ERROR  : ERROR:  syntax error at or near "day"
+LINE 1: select date_trunc(''day'',d.a)::date as fecha from (select *...
+                            ^
+2016-12-21 18:26:39 ERROR  : ERROR:  syntax error at or near "day"
+LINE 1: select date_trunc(''day'',d.a)::date as fecha from (select *...
+                            ^
+2016-12-21 18:26:54 ERROR  : ERROR:  function generate_series(unknown, unknown, unknown) is not unique
+LINE 1: ...unc('day',d.a)::date as fecha from (select * from generate_s...
+                                                             ^
+HINT:  Could not choose a best candidate function. You might need to add explicit type casts.
+2016-12-21 18:29:26 ERROR  : ERROR:  syntax error at or near "day"
+LINE 1: select date_trunc(''day'',d.a)::date as fecha from (select *...
+                            ^
+2016-12-21 18:30:20 ERROR  : ERROR:  syntax error at or near "day"
+LINE 1: select date_trunc(''day'',d.a)::date as fecha from (select *...
+                            ^
+2016-12-21 18:33:00 ERROR  : ERROR:  syntax error at or near "2016"
+LINE 1: ...te as fecha from (select * from generate_series(''2016-07-01...
+                                                             ^
+2016-12-21 18:33:15 ERROR  : ERROR:  syntax error at or near "1"
+LINE 1: ...00'::timestamp,'2016-08-01 23:59:59'::timestamp,''1 day'')) ...
+                                                             ^
+2016-12-21 18:33:31 ERROR  : ERROR:  date/time field value out of range: "2016-07-0100:00:00"
+LINE 1: ...date as fecha from (select * from generate_series('2016-07-0...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+2016-12-21 18:33:48 ERROR  : ERROR:  column "31" does not exist
+LINE 1: ...)), 'YYYY-MM-DD') AS date FROM generate_series(0, "31", 1)  ...
+                                                             ^
+2016-12-21 18:33:57 ERROR  : ERROR:  column "1" does not exist
+LINE 1: ...)), 'YYYY-MM-DD') AS date FROM generate_series(0, "1", 1)  A...
+                                                             ^
+2016-12-21 18:35:38 ERROR  : ERROR:  date/time field value out of range: "2016-07-0100:00:00"
+LINE 1: ...date as fecha from (select * from generate_series('2016-07-0...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+2016-12-21 18:38:17 ERROR  : ERROR:  syntax error at or near "elect"
+LINE 1: elect DATE '2016-01-01' + (interval '1' month * generate_ser...
+        ^
+2016-12-21 18:39:03 ERROR  : ERROR:  column "month_count" does not exist
+LINE 1: ...-01-01' + (interval '1' month * generate_series(0,month_coun...
+                                                             ^
+2016-12-21 18:44:08 ERROR  : ERROR:  function first_day_month(date) does not exist
+LINE 1: ...from d.date) FROM (SELECT generate_series(0,30) + first_day_...
+                                                             ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2016-12-21 18:47:27 ERROR  : ERROR:  column "01" does not exist
+LINE 1: ...)), 'YYYY-MM-DD') AS date FROM generate_series(0, "01", 1)  ...
+                                                             ^
+2016-12-21 19:08:48 ERROR  : ERROR:  timestamp with time zone units "date" not recognized
+2016-12-21 19:09:16 ERROR  : ERROR:  syntax error at or near ","
+LINE 1: select extract (year , month from (select date_trunc('month'...
+                             ^
+2016-12-21 19:11:27 ERROR  : ERROR:  syntax error at or near "month"
+LINE 1: select extract (year month from (select date_trunc('month', ...
+                             ^
+2016-12-22 10:19:34 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-01-13 13:00:25 ERROR  : FATAL:  sorry, too many clients already
+
+2017-01-13 13:04:28 ERROR  : ERROR:  column "micombolocal" does not exist
+LINE 20: where f.anulada=false and f.id_locales=micombolocal and f.fe...
+                                                ^
+2017-01-13 13:47:26 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-01-13 13:55:57 ERROR  : ERROR:  column "2017-01-13 00:00:00" does not exist
+LINE 4: and facturacion.fecha >="2017-01-13 00:00:00"
+                                ^
+2017-01-13 13:56:51 ERROR  : ERROR:  column "facturacion.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: ...tal, max(nombre)||'-'||max(apellido) as Nombre  , facturacio...
+                                                             ^
+2017-01-13 14:42:19 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-01-13 14:45:39 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-01-13 14:57:12 ERROR  : ERROR:  column "micombolocal" does not exist
+LINE 7: where c.id_locales=micombolocal 
+                           ^
+2017-01-13 14:58:23 ERROR  : ERROR:  syntax error at or near "group"
+LINE 11: group by id_cliente
+         ^
+2017-01-13 14:58:29 ERROR  : ERROR:  column "cl.cedula" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select cedula as "Codigo",apellido ||' '||nombre as "Cliente...
+               ^
+2017-01-13 14:58:48 ERROR  : ERROR:  column "Cliente" does not exist
+LINE 11: order by "Cliente","Fecha Consumo"
+                  ^
+2017-01-13 14:59:03 ERROR  : ERROR:  column "c.fecha" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select fecha as "Fecha Consumo",producto_his as "Producto",c...
+               ^
+2017-01-13 14:59:12 ERROR  : ERROR:  column "c.producto_his" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select producto_his as "Producto",cantidad as "Cantidad",rou...
+               ^
+2017-01-13 15:00:12 ERROR  : ERROR:  column "c.id" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select c.*
+               ^
+2017-01-13 15:02:37 ERROR  : ERROR:  column "c.id_formulado" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: select c.id_cliente , c.id_formulado
+                              ^
+2017-01-13 15:08:27 ERROR  : ERROR:  syntax error at or near "as"
+LINE 1: ...ente , c.id_formulado , max(count(c.id_formulado) as cantida...
+                                                             ^
+2017-01-13 15:08:35 ERROR  : ERROR:  aggregate function calls cannot be nested
+LINE 1: select c.id_cliente , c.id_formulado , max(count(c.id_formul...
+                                                   ^
+2017-01-13 15:11:20 ERROR  : ERROR:  LIMIT #,# syntax is not supported
+LINE 13: limit 1 , 15
+         ^
+HINT:  Use separate LIMIT and OFFSET clauses.

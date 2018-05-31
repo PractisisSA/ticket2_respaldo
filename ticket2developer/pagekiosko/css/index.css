@@ -1,0 +1,108 @@
+.main{
+	margin: 5px auto;
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: relative;
+	}
+
+.slides{
+	width: 100%;
+	margin: 10px auto;
+}
+
+.slides img{
+	width: 100%;
+}
+
+/*CSS para crear estilo PINTEREST*/
+#imgsearch{
+	width : 100%;
+	max-width : 250px;
+	border : 2px solid teal;
+}
+#wrapper {
+	width: 100%;
+	margin: 20px auto;
+}
+
+#columns {
+	-webkit-column-count: 4;
+	-webkit-column-gap: 25px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 4;
+	-moz-column-gap: 25px;
+	column-count: 4;
+	column-gap: 25px;
+}
+
+.pin {
+	display: inline-block;
+	margin: 0px auto;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	padding: 0;
+	opacity: 1;
+	width: 100%;
+	height: 400px;
+	background: none repeat scroll 0 0 #fff;
+}
+
+.pin img {
+	width: 100%;
+	height: 250px;
+	border-bottom: 1px solid #ccc;
+	
+}
+
+.pin p {
+	font: 16px/22px Roboto, sans-serif;
+	margin: 5px auto;
+	color: #000;
+}
+
+#name_concert{
+	background-color: #000;
+	width: 100%;
+	max-width: 75px;
+	color: #fff;
+}
+
+@media (max-width: 512px){
+	#columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
+@media (max-width: 640px) and (min-width: 513px){
+	#columns {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media (max-width: 720px) and (min-width: 641px){
+	#columns {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 721px){
+   #columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+    }
+}
+@media (max-width: 1600px) and (min-width: 1025px) {
+   #columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+    }
+}
